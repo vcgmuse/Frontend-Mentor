@@ -68,6 +68,9 @@ main {
     gap: 1rem;
     font-weight: 700;
 }
+.selected{
+    background-color: gainsboro;
+}
 /* Animaitons  */
 @keyframes slideDown{
     0%{

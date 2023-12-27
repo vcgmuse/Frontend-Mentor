@@ -4,14 +4,12 @@ allButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.target.parentNode.parentNode.classList.toggle('active');
     e.target.nextElementSibling.classList.toggle('active');
-
     let newArray = Array.from(allButtons).filter(btn=>btn!==e.target);
     newArray.forEach((element) => {
       element.parentNode.parentNode.classList.remove('active');
       element.nextElementSibling.classList.remove('active');
       updateActiveIMG();
     });
-
   });
 });
 allImages.forEach((image) => {

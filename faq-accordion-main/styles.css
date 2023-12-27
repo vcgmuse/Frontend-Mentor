@@ -43,12 +43,12 @@ main {
     overflow: hidden;
     animation: slideUp 350ms linear forwards; 
 }
-.card p.active {
+.card.active p {
     display: block;
     animation: slideDown 350ms linear forwards;
 }
 
-.row h3{
+.row button{
     color: hsl(292, 42%, 14%);
 }
 .card .top{
@@ -68,9 +68,7 @@ main {
     gap: 1rem;
     font-weight: 700;
 }
-.selected{
-    background-color: gainsboro;
-}
+
 /* Animaitons  */
 @keyframes slideDown{
     0%{

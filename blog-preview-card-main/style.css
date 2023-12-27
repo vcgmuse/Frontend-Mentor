@@ -35,6 +35,9 @@ main h2 {
   font-weight: 900;
   letter-spacing: 0px;
 }
+main h2:hover{
+  color: hsl(47, 88%, 63%);
+}
 
 main img.main-img {
   /* max-width: 450px; */

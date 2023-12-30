@@ -33,7 +33,7 @@ dismiss.addEventListener('click', (e) => {
 let userAgent = navigator.userAgent;
 if (userAgent.indexOf("Firefox") !== -1) {
   // Inject a style block with a media query for Firefox
-  let cssRules = '@media screen and (min-width: 1440px) { main { margin: 10rem 35rem; } }' ;
+  let cssRules = '@media screen and (min-width: 1440px) { main { margin: 10rem 25rem; } }' ;
   let style = document.createElement('style');
   style.textContent = cssRules;
   document.head.appendChild(style);

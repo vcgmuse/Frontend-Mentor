@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  position: relative;
+}
+/* Main content CSS */
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  gap: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5em;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  background: url('./assets/images/icon-list.svg') no-repeat left top;
+  height: 34px;
+  margin: 1rem 0;
+  padding: 0px 2.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+input {
+  border: solid lightgray;
+}
+input,
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  transition: all 1s linear ease-in-out;
+}
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(to right, #d34466, hsl(4, 100%, 67%));
+  box-shadow: 0rem 1rem 2rem rgba(255, 98, 87, 0.4);
+}
+button {
+  color: #fff;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  font-weight: 600;
+}
+input[type='email']:invalid {
+  color: rgba(255, 98, 87, 1);
+  border: 2px solid rgba(255, 98, 87, 0.2); /* Add a red border for invalid email */
+  background-color: rgba(
+    255,
+    98,
+    87,
+    0.1
+  ); /* Add a background color for visual emphasis */
+}
+.invalid {
+  display: none;
+  color: hsl(4, 100%, 67%);
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.email .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Success CSS */
+.success {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+  margin: 1.5rem;
+  padding: 10rem 0rem;
+  padding-bottom: 0;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+}
+.success .head {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.thanks {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.success span {
+  font-weight: 700;
+}
+.success p {
+  font-weight: 400;
+}
+.head img {
+  max-width: 64px;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    margin: 10rem 20rem;
+    padding: 1.25rem;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .content {
+    margin: 0.5rem 3rem;
+  }
+
+  .content h1 {
+    line-height: 2.5rem;
+  }
+  ul li {
+    padding-right: 0.2rem;
+  }
+  .header {
+    background: url('./assets/images/illustration-sign-up-desktop.svg')
+      no-repeat left center;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .success {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10rem 30rem;
+    padding: 3rem;
+    min-height: 60vh;
+  }
+}

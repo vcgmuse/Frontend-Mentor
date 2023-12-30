@@ -115,6 +115,11 @@ input[type='email']:invalid {
   max-width: 64px;
 }
 @media screen and (min-width: 1440px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body {
     background-color: hsl(234, 29%, 20%);
   }
@@ -124,7 +129,7 @@ input[type='email']:invalid {
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
-    margin: 10rem 35rem;
+    margin: 5rem 20rem;
     padding: 1.25rem;
     border-radius: 20px;
     overflow: hidden;

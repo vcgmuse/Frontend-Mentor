@@ -124,7 +124,7 @@ input[type='email']:invalid {
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
-    margin: 10rem 20rem;
+    margin: 10rem 35rem;
     padding: 1.25rem;
     border-radius: 20px;
     overflow: hidden;
@@ -151,7 +151,7 @@ input[type='email']:invalid {
   .success {
     background-color: #fff;
     border-radius: 20px;
-    margin: 10rem 30rem;
+    margin: 10rem 35rem;
     padding: 3rem;
     min-height: 60vh;
   }

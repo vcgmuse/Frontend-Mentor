@@ -268,3 +268,14 @@ function switchDate(e) {
       break;
   }
 }
+let userAgent = navigator.userAgent;
+document.onload = function () {
+  if (userAgent.indexOf('Firefox') !== -1) {
+    // Inject a style block with a media query for Firefox
+    let cssRules =
+      '@media screen and (min-width: 1440px) { main { margin: 10rem 20rem; } }';
+    let style = document.createElement('style');
+    style.textContent = cssRules;
+    document.head.appendChild(style);
+  }
+};

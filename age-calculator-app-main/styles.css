@@ -97,7 +97,7 @@ main{
   }
   @media screen and (min-width: 1440px) {
     main {
-      margin: 4.5rem 20rem;
+      margin: 4.5rem 10rem;
     }
     .day input, .month input, .year input{
       font-size: 1.75rem;

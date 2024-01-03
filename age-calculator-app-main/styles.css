@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: hsl(0, 0%, 94%);
+  font-family: 'Poppins', sans-serif;
+  color: hsl(0, 0%, 8%);
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 30% 20px;
+    height: 600px;
+    margin: 4.5rem .75rem;
+    padding: 3rem 1rem;
+}
+.upper p:last-child{
+  font-size: 1rem;
+  opacity: 0;
+}
+.upper p.required {
+  color: hsl(0, 100%, 67%);
+  opacity: 1;
+}    
+.upper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.day, .month, .year {
+  flex: 1;
+  color: hsl(0, 1%, 44%);
+}
+
+.day input, .month input, .year input{
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  margin-top: .5rem;
+  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.day input:focus, .month input:focus, .year input:focus{
+  border: hsl(259, 100%, 65%);  
+}
+.mid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+  }
+  
+  .mid .bar {
+    height: 2px;
+    width: 100%;
+    background-color: hsl(0, 0%, 86%);
+  }
+  
+  .mid img {
+    position: absolute;
+    background-color: hsl(0, 0%, 8%);
+    height: 72px;
+    padding: 1.2rem;
+    border-radius: 50%;
+  }
+  .mid img.valid {
+    background-color: hsl(259, 100%, 65%);
+  }
+  .lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .lower span{
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+    font-style: italic;
+  }
+  .lower div{
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  @media screen and (min-width: 1440px) {
+    main {
+      margin:4.5rem 40rem;
+    }
+    .day input, .month input, .year input{
+      font-size: 1.75rem;
+    }
+    .lower p, .lower span{
+      font-size: 5rem;
+    }
+    .mid img{
+      right: 0;
+    }
+  }

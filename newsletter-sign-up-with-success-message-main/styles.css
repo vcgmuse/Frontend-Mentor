@@ -29,6 +29,15 @@ body {
   line-height: 1.2rem;
   font-weight: 600;
 }
+.header {
+  background: url('./assets/images/illustration-sign-up-mobile.svg')
+    no-repeat left center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
 h1 {
   font-size: 2.5em;
 }

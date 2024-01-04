@@ -28,12 +28,14 @@ main{
     padding: 3rem 3rem;
 }
 .upper p:last-child{
-  font-size: 1rem;
+  font-size: .8rem;
   opacity: 0;
+  margin-bottom: 1.2rem;
 }
 .upper p.required {
   color: hsl(0, 100%, 67%);
   opacity: 1;
+
 }    
 .upper {
     display: flex;

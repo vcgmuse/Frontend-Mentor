@@ -30,8 +30,8 @@ body {
   font-weight: 600;
 }
 .header {
-  background: url('./assets/images/illustration-sign-up-mobile.svg')
-    no-repeat left center;
+  content: url('./assets/images/illustration-sign-up-mobile.svg') no-repeat left
+    center;
   background-size: cover;
   height: 300px;
   width: 100%;
@@ -71,7 +71,8 @@ button:hover {
   cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   background: linear-gradient(to right, #d34466, hsl(4, 100%, 67%));
   box-shadow: 0rem 1rem 2rem rgba(255, 98, 87, 0.4);
 }
@@ -136,7 +137,7 @@ input[type='email']:invalid {
   max-width: 64px;
 }
 @media screen and (min-width: 1440px) {
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

@@ -81,7 +81,10 @@ main span {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width:1440px) {
+@media screen and (min-width: 1200px) {
+  body{
+    font-size:20px
+  }
     main {
         margin: 2rem 40rem;
     }
@@ -90,15 +93,4 @@ main span {
         max-width: 450px;
       }
 }
-@media screen and (min-width: 1700px) {
-    html {
-        font-size: 24px;
-    }
-    main {
-        margin: 2rem 2rem;
-    }
-    main img.main-img {
-        min-width: 250px;
-        max-width: 540px;
-      }
-}
+

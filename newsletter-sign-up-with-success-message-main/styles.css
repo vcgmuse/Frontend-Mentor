@@ -21,6 +21,14 @@ body {
   align-items: center;
 }
 /* Main content CSS */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100svh;
+  height: 600px;
+  align-items: center;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -30,12 +38,11 @@ body {
   font-weight: 600;
 }
 .header {
-  content: url('./assets/images/illustration-sign-up-mobile.svg') no-repeat left
-    center;
-  background-size: cover;
-  height: 300px;
+  background: url('./assets/images/illustration-sign-up-mobile.svg') no-repeat;
+  height: 250px;
   width: 100%;
-  overflow: hidden;
+  flex-shrink: 0;
+  /* overflow: hidden; */
   border-radius: 20px;
 }
 h1 {
@@ -167,8 +174,8 @@ input[type='email']:invalid {
     padding-right: 0.2rem;
   }
   .header {
-    background: url('./assets/images/illustration-sign-up-desktop.svg')
-      no-repeat left center;
+    content: url('./assets/images/illustration-sign-up-desktop.svg') no-repeat
+      left center;
     background-size: cover;
     height: 500px;
     width: 500px;

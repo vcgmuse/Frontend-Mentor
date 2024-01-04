@@ -41,6 +41,8 @@ main{
     gap: .1rem;
 }
 .day, .month, .year {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   color: hsl(0, 1%, 44%);
 }

@@ -14,6 +14,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Main content CSS */
 .content {
   display: flex;
@@ -96,7 +102,7 @@ input[type='email']:invalid {
   justify-content: space-between;
   min-height: 90vh;
   margin: 1.5rem;
-  padding: 10rem 0rem;
+  padding: 2rem 0rem;
   padding-bottom: 0;
   z-index: 100;
   position: absolute;
@@ -135,7 +141,7 @@ input[type='email']:invalid {
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
-    margin: 5rem 20rem;
+    margin: 1rem 10rem;
     padding: 1.25rem;
     border-radius: 20px;
     overflow: hidden;

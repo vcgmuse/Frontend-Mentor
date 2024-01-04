@@ -25,7 +25,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 100svh;
   height: 600px;
   align-items: center;
 }
@@ -38,11 +37,15 @@ main {
   font-weight: 600;
 }
 .header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 0.4;
   background: url('./assets/images/illustration-sign-up-mobile.svg') no-repeat;
-  height: 250px;
+  background-size: cover;
+  height: 60%;
   width: 100%;
-  flex-shrink: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 20px;
 }
 h1 {
@@ -143,7 +146,7 @@ input[type='email']:invalid {
 .head img {
   max-width: 64px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 720px) {
   * {
     margin: 0;
     padding: 0;
@@ -153,15 +156,13 @@ input[type='email']:invalid {
     background-color: hsl(234, 29%, 20%);
   }
   main {
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
+    margin: 3rem 10rem;
     background-color: #fff;
-    margin: 1rem 10rem;
+    width: 900px;
     padding: 1.25rem;
     border-radius: 20px;
-    overflow: hidden;
+  
   }
   .content {
     margin: 0.5rem 3rem;
@@ -174,13 +175,10 @@ input[type='email']:invalid {
     padding-right: 0.2rem;
   }
   .header {
-    content: url('./assets/images/illustration-sign-up-desktop.svg') no-repeat
-      left center;
+    background: url('./assets/images/illustration-sign-up-desktop.svg') no-repeat;
     background-size: cover;
-    height: 500px;
-    width: 500px;
-    overflow: hidden;
-    border-radius: 20px;
+    height: 100%;
+    width: 60%;
   }
   .success {
     background-color: #fff;

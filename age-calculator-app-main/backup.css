@@ -4,12 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body{
   background-color: hsl(0, 0%, 94%);
   font-family: 'Poppins', sans-serif;
@@ -23,9 +17,8 @@ main{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px 20px 30% 20px;
     height: 600px;
-    width: 400px;
     margin: 4.5rem .75rem;
-    padding: 3rem 3rem;
+    padding: 3rem 1rem;
 }
 .upper p:last-child{
   font-size: 1rem;
@@ -38,7 +31,7 @@ main{
 .upper {
     display: flex;
     justify-content: space-around;
-    gap: .1rem;
+    gap: 1rem;
 }
 .day, .month, .year {
   flex: 1;
@@ -105,7 +98,6 @@ main{
   @media screen and (min-width: 1440px) {
     main {
       margin: 4.5rem 30rem;
-      width: 700px;;
     }
     .day input, .month input, .year input{
       font-size: 1.75rem;

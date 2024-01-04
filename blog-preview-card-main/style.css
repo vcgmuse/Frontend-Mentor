@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 body {
-  justify-content: center;
-  align-items: center;
-}
-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,6 +34,7 @@ main div.mini-title {
 main h2 {
   font-weight: 900;
   letter-spacing: 0px;
+  width: fit-content;
 }
 main h2:hover{
   color: hsl(47, 88%, 63%);
@@ -49,16 +46,21 @@ main img.main-img {
   background-size: cover;
 }
 main p {
+  display:inline;
   color: hsl(0, 0%, 50%);
   font-weight: 400;
+  max-width: 400px;
+  word-break: break-all;
 }
 main span {
+  width: fit-content;
   font-weight: 400;
 }
 .avatar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: fit-content;
   gap: 1rem;
 }
 .avatar p {
@@ -90,10 +92,10 @@ main span {
 }
 @media screen and (min-width: 1700px) {
     html {
-        font-size: 32px;
+        font-size: 24px;
     }
     main {
-        margin: 2rem 20rem;
+        margin: 2rem 2rem;
     }
     main img.main-img {
         min-width: 250px;
